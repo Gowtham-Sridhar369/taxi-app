@@ -1,0 +1,268 @@
+//digital_agency
+.digital_agency{
+	display: block;
+	overflow: hidden;
+	padding-top: 130px;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		left: 60%;
+		top: 0;
+		height: 14px;
+		width: 14px;
+		border: 3px solid #ecbbfa;
+		border-radius: 50%;
+		animation: float-bob-x infinite 15s linear;
+	}
+	&:after{
+		content: ""; 
+		background-image: -moz-linear-gradient( 135deg, rgb(243,139,210) 0%, rgb(219,200,254) 100%);
+		background-image: -webkit-linear-gradient( 135deg, rgb(243,139,210) 0%, rgb(219,200,254) 100%);
+		background-image: -ms-linear-gradient( 135deg, rgb(243,139,210) 0%, rgb(219,200,254) 100%); 
+		height: 24px;
+		width: 24px;
+		position: absolute;
+		left: 170px;
+		top: 280px;
+		transform: translateY(-50%);
+		z-index: 1;
+		border: 5px solid #f2ecfd;
+		animation: pulseBig 2s infinite;
+	}
+	.tittle{
+		padding-bottom: 100px;
+		.ball{
+			height: 37px;
+			width: 37px;
+			position: relative;
+			margin: 0 auto;
+			display: block; 
+			animation: rotation 10s linear infinite;
+			&:before{
+				content: "";
+				position: absolute;
+				bottom: 6px;
+				left: 0;
+				height: 14px;
+				width: 14px;
+				border-radius: 50%;
+				background: #93fbf0;  
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 14px;
+				width: 14px;
+				border-radius: 50%;
+				background: #78f6b3;  
+			}
+			span{ 
+				position: absolute;
+				top: 2px;
+				height: 14px;
+				width: 14px;
+				border-radius: 50%;
+				background: #fd58c9;  
+			}
+		}
+		h2{
+			max-width: 865px;
+			padding-top: 30px;
+		}
+		p{
+			font: 400 22px/30px $font;
+			color: $pfont2;
+			max-width: 870px;
+			margin: 0 auto;
+			padding-top: 30px;
+		}
+	}
+	.agency_count{
+		display: block;
+		overflow: hidden;
+		background: url("../images/digital-agency-bg.jpg") no-repeat center;
+		background-size: cover;
+		padding: 150px 0 100px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 112px;
+			bottom: 112px;
+			display: block;
+			width: 680px;
+			height: 515px;
+			border: 1px solid #fff;
+			border-left: 0;
+		}
+		.watch{
+			height: 210px;
+			display: block;
+			position: relative;
+			margin-top: 100px;
+			h4{
+				font: 400 18px/1 $font;
+				color: #fff; 
+				transform: rotate(-90deg);
+				position: absolute;
+				left: -80px;
+				top: 44%;
+			}
+			.popup-youtube{
+				height: 98px;
+				line-height: 98px;
+				width: 98px;
+				border-radius: 50%;
+				text-align: center;
+				background: #fff;
+				display: block;
+				color: #dd56f9;
+				animation: pulseBig 2s infinite; 
+				position: absolute;
+				left: 70px;
+				top: 50px;
+				i:before{
+					font-size: 50px;
+				}
+			}
+		}
+		.countarup_area{
+			padding-left: 85px;
+			.counter_item{
+				float: left;
+				border-radius: 50%;
+				background: #7bf2d5;
+				height: 216px;
+				width: 216px;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				flex-direction: column; 
+				margin-right: 30px !important;
+				h4{
+					color: #fff;
+					font: 400 24px/1 $font;
+					display: block;
+					width: 100%;
+				}
+				h2{
+					color: #fff;
+					font: 700 50px/1 $font; 
+					padding-top: 10px;
+					width: 100%;
+				}
+				&:first-child{
+					width: 182px;
+					height: 182px;
+					margin: 0;
+					background-image: -moz-linear-gradient( -48deg, rgb(252,90,242) 0%, rgb(255,35,71) 100%);
+					background-image: -webkit-linear-gradient( -48deg, rgb(252,90,242) 0%, rgb(255,35,71) 100%);
+					background-image: -ms-linear-gradient( -48deg, rgb(252,90,242) 0%, rgb(255,35,71) 100%);
+				}
+				&:nth-child(2){
+					margin-top: 55px;
+				}
+				&:nth-child(3){
+					background: #c8c8ff;
+					margin-top: -50px;
+					margin-left: 40px;
+				}
+				&:nth-child(4){ 
+					width: 182px;
+					height: 182px;
+					margin: 0;
+					margin-top: 30px;
+					background-image: -moz-linear-gradient( -35deg, rgb(89,222,246) 0%, rgb(152,176,254) 100%);
+					background-image: -webkit-linear-gradient( -35deg, rgb(89,222,246) 0%, rgb(152,176,254) 100%);
+					background-image: -ms-linear-gradient( -35deg, rgb(89,222,246) 0%, rgb(152,176,254) 100%);
+				}
+			}
+		}
+	}
+}
+.da_2{
+	&:after{
+		top: 40%;
+	}
+	&:before{
+		left: auto;
+		right: 10%;
+		background: #baf6fa;
+		border: 0;
+	}
+	.shap_style{
+		top: 60px; 
+	}
+	.agency_count{
+		background: url("../images/digital-agency-bg-2.jpg") no-repeat bottom right;
+		padding: 0; 
+		.illistasion_img{
+			padding-top: 120px;
+		}
+		.illistasion{
+			margin-left: -240px;
+		}
+		.countarup_area{
+			margin: 90px 0; 
+			padding-left: 0;
+			background: #cc6bfc;
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				left: 30px;
+				right: -30px;
+				top: 30px;
+				bottom: -30px;
+				display: block;
+				border: 1px solid #fff;
+			}
+			.countarup_row{ 
+				padding-top: 75px;
+				max-width: 510px; 
+				margin-left: 100px;
+			}
+			.counter_item_2 {
+				margin-bottom: 50px;
+				h4{
+					color: #fff;
+					font: 400 24px/1 $font;
+					display: block; 
+					padding-bottom: 25px;
+				}
+				h2{
+					color: #fff;
+					font: 700 50px/122px $font;  
+					min-width: 180px;
+					display: inline-block;
+					background: #d979fd;
+					border-radius: 10px;
+					text-align: center;
+				}
+			}
+			.watch_area{
+				position: absolute;
+				top: 50%;
+				right: -70px;
+				transform: translateY(-50%);
+				z-index: 1;
+				.watch{
+					width: 185px;
+					margin: 0;
+					z-index: 1;
+					h4{
+						right: -130px;
+						left: auto;
+					}
+				}
+			}
+		}
+	}
+}
+//digital_agency

@@ -1,0 +1,123 @@
+//pricing_area
+.pricing_area{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding-top: 140px;
+	padding-bottom: 90px;
+	.tittle{
+		padding-bottom: 40px;
+		h6{
+			font: 700 26px/1 $font;
+			color: #242425;
+			padding-top: 20px;
+		}
+		p{
+			font-size: 18px;
+			line-height: 30px;
+			max-width: 790px;
+			margin: 0 auto;
+			padding-top: 30px;
+		}
+	}
+	.nav-tabs{
+		border: 0;
+		background-image: -moz-linear-gradient( 0deg, rgb(160,37,249) 0%, rgb(223,88,249) 100%);
+		background-image: -webkit-linear-gradient( 0deg, rgb(160,37,249) 0%, rgb(223,88,249) 100%);
+		background-image: -ms-linear-gradient( 0deg, rgb(160,37,249) 0%, rgb(223,88,249) 100%);
+		border-radius: 30px;
+		height: 60px;
+		width: 131px;
+		display: block;
+		margin: 0 auto;
+		padding: 5px; 
+		margin-bottom: 90px;
+		li{
+			display: inline-block; 
+			&:before{
+				content: "Monthly";
+				font: 700 18px/49px $font;
+				color: #242425;
+				position: absolute;
+				margin-left: -85px;
+			}
+			&:last-child{
+				padding-left: 18px;
+				&:before{
+					content: "Yearly";
+					margin-left: 68px;
+				}
+			}
+			a{
+				width: 49px;
+				height: 49px;
+				border-radius: 50%;
+				background: transparent;
+				display: block;   
+				&.active{ 
+					background: #fff;
+				}
+			}
+		}
+	}
+	.plan{
+		box-shadow: 0px 16px 30px 0px rgba(181, 179, 185, 0.35);
+		margin: 0 auto 30px;
+		max-width: 370px;
+		padding: 30px;
+		padding-bottom: 65px;
+		text-align: center; 
+		h4{
+			font: 700 18px/1 $font;
+			color: #242425;
+			padding-top: 20px;
+		}
+		h2{
+			font: 700 42px/1 $font;
+			color: #d853f9; 
+			padding-top: 40px;
+			background: url("../images/icons/price-shap.png") no-repeat center bottom;
+			padding-bottom: 12px;
+		}
+		ul{
+			padding: 35px 0;
+			padding-bottom: 50px;
+			li{
+				font: 400 16px/32px $font;
+				color: #242425;
+			}
+		}
+		.theme_btn{
+			line-height: 53px;
+			min-width: 190px;
+			background: transparent;
+			border: 2px solid #db55f9;
+			color: $bc;
+			text-transform: uppercase;
+			&:hover, &:focus{ 
+				background-image: -moz-linear-gradient( 0deg, rgb(160,37,249) 0%, rgb(223,88,249) 100%);
+				background-image: -webkit-linear-gradient( 0deg, rgb(160,37,249) 0%, rgb(223,88,249) 100%);
+				background-image: -ms-linear-gradient( 0deg, rgb(160,37,249) 0%, rgb(223,88,249) 100%);
+				box-shadow: 0px 22px 18px 0px rgba(164, 119, 174, 0.45);
+				color: #fff;
+			}
+		}
+	}
+	.shap_style{
+		top: 0;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 80px;
+		right: 0;
+		background: url("../images/shap/skye-shap-3.png") no-repeat;
+		width: 201px;
+		height: 184px;
+		animation: rotation 20s linear infinite;
+	}
+}
+.pa_2{
+	padding-bottom: 200px;
+}
+//pricing_area

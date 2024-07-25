@@ -1,0 +1,370 @@
+//purpose_area
+.purpose_area{
+	display: block;
+	overflow: hidden;
+	h2{
+		font: 900 45px/55px $font;
+		color: #282828;
+	}
+	p{
+		font-size: 18px;
+		padding-bottom: 20px;
+		max-width: 610px;
+	}
+	.first_p{
+		font: 400 24px/30px $font;
+		color: $pfont2;
+		max-width: 810px;
+		padding-top: 26px;
+	}
+	.purpose_last{
+		padding-top: 130px;
+	}
+}
+.pua_2{
+	position: relative;
+	padding-top: 140px;
+	.shap_style{
+		left: auto;
+		right: 0;
+		top: 40px;
+		&:before{
+			right: auto;
+			left: 60px;
+		}
+		span{
+			right: 0;
+			left: 48px;
+		}
+	}
+}
+.pa_3{
+	padding-bottom: 200px;
+	h4{
+		font: 900 24px/1 $font;
+		color: #282828;
+		padding-top: 15px;
+	}
+	.theme_btn{
+		min-width: 246px;
+		margin-top: 30px;
+		text-transform: uppercase; 
+	}
+}
+.pa_4{
+	padding-bottom: 30px;
+}
+.pa_t{
+	padding-bottom: 30px;
+	padding-top: 180px;
+}
+//purpose_area
+
+//infographic_design
+.infographic_design{
+	display: block;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 0px rgba(197, 197, 197, 0.35);
+	background: url("../images/infographic_design.png") no-repeat;
+	padding: 130px 0 100px;
+	.tittle{
+		h4{
+			color: #9978fb;
+		}
+		p{
+			font-size: 22px;
+			color: rgba(55, 37, 60, 0.8);
+			max-width: 860px;
+			margin: 0 auto;
+			padding-top: 20px;
+			position: relative;
+			padding-bottom: 60px;
+			&:after{
+				content: "";
+				position: absolute;
+				left: 45px;
+				right: 45px;
+				bottom: 0;
+				border-bottom: 1px solid #f5f5f5;
+			}
+		}
+	}
+	.client_year{
+		max-width: 810px;
+		margin: 0 auto;
+		.client_list{
+			padding-top: 40px;
+			&:nth-child(2){
+				padding-left: 50px;
+			}
+			&:last-child{
+				padding-left: 90px;
+			}
+			h4{
+				font: 700 18px/1 $font;
+				color: #37253c;
+			}
+			h6{
+				font: 400 16px/28px $font;
+				color: rgba(55, 37, 60, 0.8);
+				padding-top: 10px;
+			}
+		}
+	}
+	
+	.share{
+		text-align: center;
+		padding-top: 60px;
+		li{
+			display: inline-block;
+			font: 400 18px/1 $font;
+			color: #37253c;
+			&:first-child{
+				padding-right: 20px;
+			}
+			a{ 
+				width: 44px;
+				border-radius: 50%;
+				text-align: center; 
+				color: #3c3b3c;
+				font: normal normal normal 18px/44px FontAwesome;
+				display: block;
+				&:hover, &:focus{ 
+					background-image: -moz-linear-gradient( 2deg, rgb(153,120,251) 0%, rgb(90,105,240) 100%);
+					background-image: -webkit-linear-gradient( 2deg, rgb(153,120,251) 0%, rgb(90,105,240) 100%);
+					background-image: -ms-linear-gradient( 2deg, rgb(153,120,251) 0%, rgb(90,105,240) 100%);
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+//infographic_design
+
+//the_challenge
+.the_challenge{
+	display: block;
+	overflow: hidden;
+	padding: 130px 0 50px;
+	h2{
+		font: 700 32px/45px $font;
+		color: #37253c;
+		padding-bottom: 15px; 
+	}
+	p{
+		font: 400 18px/28px $font;
+		color: rgba(55, 37, 60, 0.8);
+		max-width: 700px;
+	}
+	.challange_img_1{
+		padding-left: 40px; 
+	}
+	.challange_img_2{ 
+		img{
+			margin-left: -102%;
+		}
+	}
+	.challainge_row{
+		align-items: center;
+		margin-bottom: 100px;
+	}
+}
+//the_challenge
+
+//project_details
+.project_details{
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	img{
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	h2{
+		font: 700 32px/45px $font;
+		color: #37253c;
+		padding-bottom: 15px; 
+		padding-top: 100px;
+	}
+	p{
+		font: 400 18px/28px $font;
+		color: rgba(55, 37, 60, 0.8);
+		max-width: 700px; 
+		display: block;
+		margin: 0 auto 55px;
+	}
+	.details_row{
+		img{
+			 box-shadow: 0px 0px 32px 0px rgba(239, 176, 246, 0.35);
+		}
+	}
+	.more_row{
+		padding-top: 107px;
+		padding-bottom: 200px;
+		.more_text{
+			font: 400 22px/28px $font;
+			color: #37253c;
+			position: relative;
+			display: block;
+			padding-bottom: 10px;
+			padding-top: 20px;
+			&:before{ 
+				content: "";
+				position: absolute;
+				left: 38%;
+				margin: 0 auto; 
+				background: #fff;
+				height: 3px;
+				width: 3px;
+				display: block;
+				bottom: 0;
+				z-index: 1;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto; 
+				background: #9978fb;
+				height: 3px;
+				width: 95px;
+				display: block;
+				bottom: 0;
+			}
+			&:hover, &:focus{
+				&:after{
+					background: #dd56f9;
+				}
+			}
+		}
+		.more{
+			font: 700 20px/133px $font;
+			width: 133px;
+			border-radius: 50%;
+			background: #9978fb;
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+			color: #fff; 
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: 35px;
+				height: 13px;
+				width: 13px;
+				border-radius: 50%;
+				background: #ea87fe;
+			}
+			&:hover, &:focus{
+				background: #dd56f9; 
+				&:after{
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+//project_details
+
+//digital_business
+.digital_business{
+	display: block;
+	overflow: hidden;
+	padding-bottom: 200px;
+	h2{
+		font: 700 30px/42px $font;
+		color: $heding;
+		max-width: 470px;
+		padding-bottom: 45px;
+		span{
+			color: #9978fb;
+		}
+		
+	}
+	.title_p{
+		font-size: 22px; 
+		color: $pfont2;
+		padding-bottom: 60px;
+	}
+	.socail{
+		text-align: right;
+		li{
+			display: inline-block;
+			padding-left: 25px;
+			&:first-child{
+				padding: 0;
+			}
+			a{
+				font-size: 24px;
+				color: #bbb1c3;
+				font-family: "Font Awesome 5 Brands";
+				font-weight: 400;
+				&:hover, &:focus{
+					color: $hover;
+				}
+			}
+		}
+	}
+	.experiences_img{
+		img{
+			max-width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+	.experiences_text{
+		padding-left: 55px;
+		h3{
+			padding-bottom: 30px;
+			font: 700 22px $font;
+			color: $hover;
+		}
+		p{
+			padding-bottom: 10px;
+			font-size: 18px;
+		}
+		.experiences{
+			box-shadow: 0px 10px 26px 0px rgba(211, 209, 209, 0.35);
+			padding: 40px;
+			margin-top: 40px;
+			li{
+				font: 400 18px/55px $font;
+				color: $pfont;
+				display: block;
+				b{
+					font-weight: 700;
+					color: #282331;
+					min-width: 190px;
+					display: inline-block;
+				}
+				a{
+					color: $pfont;
+					&:hover{
+						color: $hover;
+					}
+				}
+			}
+		} 
+	}
+	.pn_post{
+		padding-top: 80px;
+		a{
+			font: 700 21px/1 $font;
+			color: #282331;
+			text-shadow: 0px 8px 4px rgba(153, 142, 142, 0.35);
+			&:last-child{
+				float: right;
+			}
+			&:hover{
+				color: $hover;
+				text-shadow: 0px 8px 4px rgba(153, 120, 251, 0.35);
+			}
+		}
+	}
+}
+//digital_business

@@ -1,0 +1,352 @@
+//about_agency
+.about_agency{
+	display: block;
+	overflow: hidden;
+	position: relative;  
+	padding: 100px 0;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 120px;
+		left: 90px;
+		border: 6px solid #eea5fb;
+		border-radius: 10px; 
+		box-shadow: 0px 16px 30px 0px rgba(181, 179, 185, 0.35); 
+		width: 29px;
+		height: 29px; 
+		animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		left: 120px;
+		bottom: 150px;
+		height: 14px;
+		width: 14px;
+		border-radius: 50%;
+		background: #ecbafa; 
+		animation: float-bob-x infinite 15s linear;
+	}
+	.tittle{ 
+		text-align: left;
+		padding-bottom: 70px;
+		h2{
+			margin: 0;
+		}
+		h5{
+			font: 400 28px $font;  
+			color: $heding;
+			padding-top: 20px;
+			i{
+				color: $bc; 
+			} 
+		}
+	}
+	img{
+		max-width: 100%;
+	}
+	.studios_text{
+		h6{
+			font: 400 22px/30px $font;
+			color: rgba(40, 40, 40, 0.8);
+			padding-top: 40px;
+		}
+		p{
+			padding: 20px 0 35px;
+			max-width: 440px;
+		}
+		.theme_btn{
+			background: transparent;
+			border: 2px solid #d953f9;
+			color: #d953f9;
+			min-width: 214px;
+			line-height: 56px;
+			font-size: 20px;
+			i{
+				font-size: 18px;
+				padding-left: 12px;
+			}
+			&:hover, &:focus{
+				background: #d953f9;
+				color: #fff;
+			}
+		}
+	}
+	.about_bg{
+		position: absolute;
+		bottom: 60px;
+		right: 0;
+		max-width: 100%;
+		z-index: -1;
+	}
+	.shap_bg{ 
+		&:before{
+			content: "";
+			position: absolute;
+			right: 20%;
+			top: 50px;
+			height: 14px;
+			width: 14px;
+			border-radius: 50%;
+			background: #baf6fa; 
+			animation: float-bob-x infinite 15s linear;
+			z-index: -1;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			right: 40%;
+			bottom: 50px;
+			height: 14px;
+			width: 14px;
+			border-radius: 50%;
+			background: #f0ddff; 
+			animation: float-bob-x infinite 15s linear;
+			z-index: -1;
+		}
+		img{
+			position: absolute;
+			right: 110px;
+			top: 0;
+			animation: rotation 20s linear infinite;
+			z-index: -1;
+		}
+	}
+}
+.aa_2{
+	&:before{ 
+		display: none;
+	}
+	.shap_bg{
+		img{ 
+			right: auto;
+			left: 0;
+			top: -30px;
+		}
+		&:after{
+			background: #baf6fa;
+		}
+	}
+	
+}
+.aa_3{
+	padding-top: 340px;
+	padding-bottom: 215px;
+	&:before{
+		top: 250px;
+		left: auto;
+		right: 100px;
+	}
+	&:after{
+		bottom: 0;
+	}
+	.about_bg {
+		right: auto;
+		left: 0;
+		top: 370px; 
+	}
+	.shap_bg{
+		img{
+			display: none;
+		}
+		&:before{
+			top: 120px;
+		}
+		&:after{
+			right: 20%;
+		}
+		span{ 
+			position: absolute;
+			left: 20%;
+			top: 190px;
+			height: 14px;
+			width: 14px;
+			border: 3px solid #93fec5;
+			border-radius: 50%;
+			animation: float-bob-x infinite 15s linear;
+		}
+	}
+	.tittle{
+		padding-bottom: 5px;
+		h4{
+			color: #9978fb;
+		}
+		h5 i{
+			color: #9978fb;
+		}
+	}
+	h6{
+		max-width: 460px;
+	}
+	.studios_text { 
+		padding-left: 45px;
+		.theme_btn {
+			color: #9978fb;
+			border-color: #9978fb;
+			&:hover, &:focus{ 
+				background-image: -moz-linear-gradient( 0deg, rgb(154,121,251) 0%, rgb(84,104,239) 100%);
+				background-image: -webkit-linear-gradient( 0deg, rgb(154,121,251) 0%, rgb(84,104,239) 100%);
+				background-image: -ms-linear-gradient( 0deg, rgb(154,121,251) 0%, rgb(84,104,239) 100%);
+				box-shadow: 0px 14px 10px 0px rgba(86, 105, 239, 0.45);
+				border-color: transparent;
+			}
+		}
+	}
+}
+//about_agency
+
+//introducing_area
+.introducing_area{
+	display: block;
+	overflow: hidden;
+	padding: 200px 0 175px;
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		left: 80px;
+		bottom: 100px;
+		height: 14px;
+		width: 14px;
+		border: 3px solid #ecbbfa;
+		border-radius: 50%;
+		animation: float-bob-x infinite 15s linear;
+	}
+	figure{
+		position: absolute;
+		bottom: 100px;
+		right: 20px;
+		img{
+			animation: rotation 20s linear infinite;
+		}
+	}
+	.introducing_img{
+		img{
+			margin-left: -230px;
+		}
+	}
+	.introducing{
+		padding-top: 120px;
+		h2{
+			font: 700 45px/55px $font;
+			color: $heding;
+		}
+		p{
+			max-width: 550px;
+			padding-bottom: 30px;
+		}
+		.bold_p{
+			font: 400 22px/30px $font;
+			color: $pfont; 
+			max-width: 520px;
+			padding: 30px 0 20px;
+		} 
+		.theme_btn{
+			min-width: 246px;
+			text-transform: uppercase;
+		}
+	}
+	.shap_style{
+		left: auto;
+		right: 0;
+		top: 40px;
+		&:before{
+			right: auto;
+			left: 60px;
+		}
+		span{
+			right: 0;
+			left: 48px;
+		}
+	}
+}
+.ia_2{
+	padding-top: 150px;
+	.introducing_img {
+		padding-top: 70px;
+	}
+}
+.ia_3{
+	padding: 100px 0;  
+}
+//introducing_area
+
+//contact_info
+.contact_info{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 200px;
+	.shap_style{
+		top: 170px;
+	}
+	.info{
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0px 0px 30px 0px rgba(186, 184, 191, 0.35);
+		margin-bottom: 30px;
+		padding: 50px 20px;
+		text-align: center;
+		.icons{
+			width: 114px;
+			height: 114px;
+			position: relative;
+			display: flex; 
+			align-items: center;
+			justify-content: center;
+			z-index: 1;  
+			margin: 0 auto;  
+			background-image: -moz-linear-gradient( 134deg, rgb(255,255,255) 0%, rgb(249,232,255) 100%);
+			background-image: -webkit-linear-gradient( 134deg, rgb(255,255,255) 0%, rgb(249,232,255) 100%);
+			background-image: -ms-linear-gradient( 134deg, rgb(255,255,255) 0%, rgb(249,232,255) 100%);
+			border-radius: 50%;
+			i:before{
+				font-size: 63px; 
+				color: #282828;
+				line-height: 1;
+				display: block;
+			}
+			.cc:before{
+				padding-top: 10px;
+			}
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0;	
+				bottom: 3px;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background: #78f6b3;
+				animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				right: 0;	
+				top: 5px;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background: $bc;
+				animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+			} 
+		}
+		h4{
+			font: 600 24px/1 $font;
+			color: #282828;
+			padding-bottom: 28px;
+			padding-top: 45px;
+		}
+		a, p{
+			display: block;
+			font: 400 18px/28px $font;
+			color: $pfont2;
+		}
+		a:hover{
+			color: $bc;
+		}
+	}
+}
+//contact_info

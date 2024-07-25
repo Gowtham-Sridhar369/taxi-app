@@ -1,0 +1,124 @@
+/*font Variables*/  
+$font: 'Overpass', sans-serif;
+
+/*Color Variables*/ 
+$bc: #d953f9;
+$hover: #a428f9; 
+$heding: #282828;  
+$pfont: rgba(36, 36, 37, 0.702);
+$pfont2: rgba(40, 40, 40, 0.8);
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}  
+
+/* Button Style */
+.theme_btn{ 
+    color: #fff;  
+    text-align: center; 
+    font: 400 18px/57px $font;
+    display: inline-block; 
+    padding: 0 20px;    
+	background-image: linear-gradient(to right, #a227f9 0%, #dd56f9 51%, #a227f9 100%);
+	background-size: 200% auto; 
+	z-index: 1; 
+	border-radius: 30px;
+	padding-top: 3px;
+    &:hover, &:focus{ 
+		color: #fff;
+		background-position: right center;
+		text-decoration: none; 
+		box-shadow: 0px 12px 30px 0px rgba(174, 174, 174, 0.35);
+    }
+} 
+.home_v3{
+	.theme_btn{
+		background-image: linear-gradient(to right, #9b79fb 0%, #5468ef 51%, #9b79fb 100%);
+	}
+	.tittle{
+		h4{
+			color: #9978fb;
+		}
+	}
+}
+/* Amination */
+.up_animat{
+	animation: float-bob-y infinite 2s linear;
+}
+.pt{
+	padding-top: 20px;
+}
+/* Amination */
+/* tittle */
+.tittle{
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	h4{
+		font: 700 22px/1 $font;
+		color: $bc;
+	}
+	h2{
+		font: 700 45px/55px $font;
+		color: $heding;
+		max-width: 700px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+}
+/* tittle */
+/* Scroll Top */ 
+.scroll-top{
+    position: fixed;
+    right: 30px;
+    bottom: 15px; 
+    height: 50px;
+    width: 50px; 
+    cursor: pointer;
+    background: $bc;
+    border: 0;
+    box-shadow: none;
+    z-index: 999;
+    color: #fff;
+    &:hover, &:focus{
+        background: #ce8506;
+    }  
+}
+/* Preloader */ 
+.preloader{
+    position:fixed;
+    left:0px; 
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:999999;
+    background-color:#ffffff;
+    background-position:center center;
+    background-repeat:no-repeat; 
+    background-image:url("../images/preloader.svg"); 
+}
+
+.theme_btn-1{
+    color: #fff;  
+    text-align: center; 
+    font: 400 18px/57px $font;
+    display: inline-block; 
+    padding: 0 20px;    
+	background-image: linear-gradient(to right, #a227f9 0%, #dd56f9 51%, #a227f9 100%);
+	background-size: 200% auto; 
+	z-index: 1; 
+	border-radius: 30px;
+	padding-top: 3px;
+
+    
+
+}
